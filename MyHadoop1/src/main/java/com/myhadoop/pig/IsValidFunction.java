@@ -5,7 +5,6 @@
  */
 package com.myhadoop.pig;
 
-import com.sun.xml.internal.ws.api.pipe.Tube;
 import java.io.IOException;
 import org.apache.pig.FilterFunc;
 import org.apache.pig.data.Tuple;
