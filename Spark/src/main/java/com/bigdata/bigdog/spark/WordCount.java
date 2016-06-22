@@ -10,9 +10,11 @@ import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 import org.apache.spark.api.java.function.VoidFunction;
 import java.io.Serializable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import scala.Tuple2;
 public class WordCount implements MyTestLogic,Serializable{
-    
+    private static final Logger logger = LoggerFactory.getLogger(WordCount.class);
     public static void main(String[] args) {
 //        new WordCount().testMe();
     }
@@ -51,7 +53,7 @@ public class WordCount implements MyTestLogic,Serializable{
 
             @Override
             public void call(Tuple2<String, Integer> pairs) throws Exception {
-                System.out.println(""+pairs._1+":"+pairs._2);
+                logger.debug(""+pairs._1+":"+pairs._2);
             }
         });
         
