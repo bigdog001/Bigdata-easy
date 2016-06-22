@@ -1,5 +1,5 @@
 package com.bigdata.bigdog.spark;
-import groovy.lang.Tuple;
+import com.bigdata.bigdog.spark.bigdog.MyTestLogic;
 import java.util.Arrays;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
@@ -9,11 +9,17 @@ import org.apache.spark.api.java.function.FlatMapFunction;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 import org.apache.spark.api.java.function.VoidFunction;
+import java.io.Serializable;
 import scala.Tuple2;
-public class WordCount{
+public class WordCount implements MyTestLogic,Serializable{
+    
     public static void main(String[] args) {
-        
-        // create spark config 
+//        new WordCount().testMe();
+    }
+
+    @Override
+    public void testMe() {
+          // create spark config 
         SparkConf sconf = new SparkConf().setAppName("my spark").setMaster("local");
         JavaSparkContext sc = new JavaSparkContext(sconf);
         

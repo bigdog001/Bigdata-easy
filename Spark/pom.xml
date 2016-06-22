@@ -22,7 +22,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.10</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -63,8 +63,9 @@
   </dependencies>
   
   <build>
-     <sourceDirectory>src/main/java</sourceDirectory>
-     <testSourceDirectory>src/main/test</testSourceDirectory>
+<!--     <sourceDirectory>src/main/java</sourceDirectory>
+     <testSourceDirectory>src/test/java</testSourceDirectory>
+      -->
 
 
      <plugins>
