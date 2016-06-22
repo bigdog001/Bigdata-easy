@@ -10,7 +10,7 @@
    
     <modules>
         <module>./MyHadoop1</module>
-        <module>./Spark</module>        
-        
+        <module>./Spark</module>
+        <module>./Scala-easy</module>
     </modules>
 </project>
