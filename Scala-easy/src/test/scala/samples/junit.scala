@@ -11,7 +11,6 @@ import org.bigdog.scalas.c6.ScalaToString;
 import org.bigdog.scalas.c7.forFilter;
 import org.bigdog.scalas.c8.NoNameFunction;
 import org.bigdog.scalas.c8.ScalaClosure;
-import org.bigdog.scalas.c10.ScalaGUI;
 
 @Test
 class AppTest {
@@ -31,7 +30,6 @@ class AppTest {
     //    forFilter_test1();
     //    NoNameFunction_test()
     //    ScalaClosure_test()
-    //    ScalaGUI_test()
 
   }
 
@@ -85,10 +83,7 @@ class AppTest {
     myTest.myExec1();
   }
 
-  def ScalaGUI_test(): Unit = {
-    var myTest = new ScalaGUI;
-    myTest.myExec1();
-  }
+  
 
 }
 
